@@ -1,0 +1,40 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Bancário</title>
+</head>
+<body>
+    <h1>Sistema Bancário</h1>
+
+    <div id="registro">
+        <h2>Registrar Nova Conta</h2>
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="number" id="numeroConta" placeholder="Número da Conta">
+        <input type="number" id="saldoInicial" placeholder="Saldo Inicial">
+        <button onclick="registrarConta()">Registrar</button>
+        <p id="registroMessage"></p>
+    </div>
+
+    <div id="acesso" style="display:none;">
+        <h2>Acesso à Conta</h2>
+        <input type="text" id="nomeAcesso" placeholder="Nome">
+        <input type="number" id="numeroContaAcesso" placeholder="Número da Conta">
+        <button onclick="acessarConta()">Acessar</button>
+        <p id="acessoMessage"></p>
+    </div>
+
+    <div id="transacoes" style="display:none;">
+        <h2>Transações</h2>
+        <button onclick="realizarDeposito()">Depósito</button>
+        <button onclick="realizarSaque()">Saque</button>
+        <button onclick="verificarExtrato()">Extrato</button>
+        <button onclick="simularEmprestimo()">Simular Empréstimo</button>
+        <p id="transacoesMessage"></p>
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "sistemabancario",
+  "version": "1.0.0",
+  "description": "sistema bancario usando javascript",
+  "main": "backend/index.js",
+  "author": "labelle candido",
+  "license": "MIT"
+}
