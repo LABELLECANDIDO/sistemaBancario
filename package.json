@@ -2,7 +2,14 @@
   "name": "sistemabancario",
   "version": "1.0.0",
   "description": "sistema bancario usando javascript",
-  "main": "backend/index.js",
+  "main": "backend/controllers/index.js",
   "author": "labelle candido",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  },
+  "scripts": {
+    "dev": "node backend/controllers/index.js"
+  }
 }

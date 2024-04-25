@@ -24,6 +24,8 @@ function salvarConta(){
 
 carregarContas();
 
+const contasController = {};
+
 contasController.registraConta = (req, res) => {
     const { nome, numeroConta, saldoInicial } = req.body;
 
@@ -45,7 +47,7 @@ contasController.registraConta = (req, res) => {
 };
 
 contasController.pegarConta = (req, res) => {
-    const { nome, numeroConta } = req.body;
+    const { nome, numeroConta } = req.query;
     const conta = contas.find(c => c.nome === nome && c.numeroConta === numeroConta);
 
     if(!conta){
