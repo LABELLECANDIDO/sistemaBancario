@@ -48,7 +48,7 @@ contasController.registraConta = (req, res) => {
 
 contasController.pegarConta = (req, res) => {
     const { nome, numeroConta } = req.query;
-    const conta = contas.find(c => c.nome === nome && c.numeroConta === numeroConta);
+    const conta = contas.find(c => c.nome === nome && c.numeroConta === parseInt(numeroConta));
 
     if(!conta){
         return res.status(404).json({error: 'conta nao encontrada.'})
