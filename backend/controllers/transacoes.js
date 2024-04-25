@@ -12,3 +12,5 @@ transacoesController.deposito = (req, res) =>
     res.status(200).json({message: 'deposito ok', saldoAtual:conta.saldo});
 
 };
+
+module.exports = transacoesController;

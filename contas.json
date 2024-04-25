@@ -1,0 +1,4 @@
+[
+  { "nome": "Conta Teste 1", "numeroConta": 1234, "saldoInicial": 100.0 },
+  { "nome": "Conta Teste 2", "numeroConta": 5678, "saldoInicial": 100.0 }
+]

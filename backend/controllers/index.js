@@ -9,8 +9,9 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-app.use('/contas', contasRouter);
-app.use('/transacoes', transacoesRouter);
+app.post('/contas', contasRouter.registraConta);
+app.get('/contas', contasRouter.pegarConta);
+app.post('/transacoes', transacoesRouter.deposito);
 
 app.listen(PORT, () => {
     console.log(`Servidor iniciado na porta ${PORT}`);
